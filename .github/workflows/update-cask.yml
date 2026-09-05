@@ -1,0 +1,22 @@
+name: Update Cask
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: macos-15
+
+    steps:
+      - name: Check out tap
+        uses: actions/checkout@v6
+
+      - name: Update to latest Photonic release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/update-cask.sh
