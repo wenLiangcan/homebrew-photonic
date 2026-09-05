@@ -33,7 +33,8 @@ CASK_VERSION="$version" CASK_SHA256="$sha256" ruby -pi -e '
 ' "$cask_path"
 
 brew style "$cask_path"
-brew audit --cask --strict "$cask_path"
+brew tap wenliangcan/photonic "$PWD"
+brew audit --cask --strict wenliangcan/photonic/photonic
 
 git config user.name "github-actions[bot]"
 git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

@@ -15,4 +15,5 @@ jobs:
       - name: Audit Cask
         run: |
           brew style Casks/photonic.rb
-          brew audit --cask --strict Casks/photonic.rb
+          brew tap wenliangcan/photonic "$GITHUB_WORKSPACE"
+          brew audit --cask --strict wenliangcan/photonic/photonic
