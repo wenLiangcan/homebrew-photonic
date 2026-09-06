@@ -1,6 +1,6 @@
 cask "photonic" do
-  version "1.5.1"
-  sha256 "9f35f60cdc66dac43d8860dfece7b7e035b109b2a0a3072fac2883d8cb8ad2c0"
+  version "1.5.2"
+  sha256 "6c9e665857e65ca3621063f11d235cca5aba0299be9d3b1c8ff7413d85da5d2e"
 
   url "https://github.com/wenLiangcan/Photonic/releases/download/v#{version}/Photonic-#{version}.dmg"
   name "Photonic"
